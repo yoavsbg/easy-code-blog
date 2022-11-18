@@ -1,12 +1,9 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "easy-code-blog",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "{easy-code} blog come to help and enrich developer on common software issues.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  },
+  "author": "Yoav Sabag",
   "dependencies": {
     "@fontsource/merriweather": "^4.5.14",
     "@fontsource/montserrat": "^4.5.13",
@@ -26,6 +23,7 @@
     "react-dom": "^18.1.0"
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "prettier": "^2.7.1"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
@@ -41,6 +39,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "deploy": "gatsby build && gh-pages -d public -b main",
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
