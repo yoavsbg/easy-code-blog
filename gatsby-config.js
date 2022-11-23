@@ -15,7 +15,7 @@ module.exports = {
       summary: `I like to take an existing idea and make it easy.`,
     },
     description: `{easy-code} blog come to help and enrich developer on common software issues.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    siteUrl: `https://easy-code.blog/`,
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -118,5 +118,12 @@ module.exports = {
         icon: `src/images/easy-code-icon.jpg`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `@isamrish/gatsby-plugin-google-adsense`,
+      options: {
+        googleAdClientId: "ca-pub-2729041642631152",
+        head: true
+      }
+    }
   ],
 }
