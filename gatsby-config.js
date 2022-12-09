@@ -131,13 +131,6 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/easy-code-icon.jpg`, // This path is relative to the root of the site.
       },
-    },
-    {
-      resolve: `@isamrish/gatsby-plugin-google-adsense`,
-      options: {
-        googleAdClientId: "ca-pub-2729041642631152",
-        head: true
-      }
     }
   ],
 }
